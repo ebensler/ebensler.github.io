@@ -1,0 +1,186 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    font-family: arial;
+}
+nav {
+    border-top: solid purple 2px;
+    background-color: whitesmoke;
+    border-bottom: solid gainsboro 1px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0px
+}
+nav ul {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+li {
+    flex: 1;
+    font-size: large;
+    color: gray;
+    font-weight: lighter;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: solid gainsboro 2px;
+}
+main {
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 40%;
+    margin: 20px;
+}
+figure {
+    display: flex;
+    justify-content: center;
+}
+progress{
+    max-width: 600px;
+    width: 30vw;
+}
+.mainTableRight{
+    padding: 10px;
+    font-size: 20px;
+}
+.mainTableLeft{
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+.secondaryTableRight{
+    padding: 10px;
+    font-size: 16px;
+}
+.secondaryTableLeft{
+    font-size: 16px;
+    text-align: right;
+}
+.skillsList {
+    text-align: left;
+    padding: 10px;
+}
+.skill{
+    font-size: 20px;
+    font-weight: 700;
+}
+.navOption {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+.navOption:hover {
+    color: purple;
+    padding-bottom: 15;
+    font-weight: 400;
+}
+.mainText {
+    font-size: 16px;
+    padding: 10px;
+    text-align:left;
+}
+#navigation {
+    display: flex;
+}
+#leftSide {
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+    border-right: solid gainsboro 2px;
+    min-height: 80vh;
+    width: 40%;
+}
+#currentPage {
+    color: purple;
+    font-weight: 600;
+}
+#name {
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px;
+}
+#occupation {
+    text-align: center;
+    padding: 10px;
+}
+#email {
+    text-decoration: none;
+    text-align: center;
+    color: purple;
+}
+#profilePicture {
+    text-align: center;
+    flex: 1;
+    padding: 1px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    border: solid gray 1px;
+}
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+}
+#pageTitle {
+    color: gray;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px;
+}
+#credentials{
+    padding: 10px;
+    color: gray;
+}
+#interestsList{
+    padding-left: 30px;
+    list-style: disc;
+}
+.interestListItem{
+    color: black;
+    font-size: 18px; 
+    padding: 5px;
+}
+#resume{
+    padding: 10px;
+    font-style: italic;
+}
+#emailLink{
+    text-decoration: none;
+    color: purple;
+}
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        min-height: 0vh;
+    }
+    #leftSide {
+        border-bottom: solid gainsboro 2px;
+        min-height: 10vh;
+        border-right: none;
+        width: 90vw;
+    }
+    footer{
+        position:relative;
+        
+    }
+    progress{
+        width: 70vw;
+    }
+}
